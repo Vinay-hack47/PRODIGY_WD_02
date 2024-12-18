@@ -1,0 +1,165 @@
+/* General Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1, h4 {
+  color: #2c3e50;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Title Styling */
+.custom-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3498db;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+/* Stopwatch Card */
+.stopwatch-card {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stopwatch-card:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Timer Display */
+.custom-timer-display {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #34495e;
+  margin: 1.5rem 0;
+}
+
+/* Buttons */
+.custom-btn {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.custom-btn:focus {
+  outline: none;
+  box-shadow: 0px 0px 8px rgba(52, 152, 219, 0.6);
+}
+
+.custom-btn:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.btn-success.custom-btn {
+  background-color: #27ae60;
+  border: none;
+}
+
+.btn-success.custom-btn:hover {
+  background-color: #2ecc71;
+}
+
+.btn-warning.custom-btn {
+  background-color: #f39c12;
+  border: none;
+}
+
+.btn-warning.custom-btn:hover {
+  background-color: #f1c40f;
+}
+
+.btn-primary.custom-btn {
+  background-color: #2980b9;
+  border: none;
+}
+
+.btn-primary.custom-btn:hover {
+  background-color: #3498db;
+}
+
+.btn-danger.custom-btn {
+  background-color: #c0392b;
+  border: none;
+}
+
+.btn-danger.custom-btn:hover {
+  background-color: #e74c3c;
+}
+
+/* Lap List */
+.custom-lap-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #8e44ad;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.list-group {
+  padding: 0;
+  margin: 0;
+}
+
+.custom-lap-item {
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  color: #2c3e50;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0.7rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.custom-lap-item:hover {
+  background-color: #ecf0f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .custom-title {
+    font-size: 2rem;
+  }
+
+  .custom-timer-display {
+    font-size: 2.5rem;
+  }
+
+  .custom-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .custom-lap-heading {
+    font-size: 1.2rem;
+  }
+
+  .custom-lap-item {
+    font-size: 0.9rem;
+  }
+}
